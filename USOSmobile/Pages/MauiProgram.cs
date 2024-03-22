@@ -7,8 +7,7 @@ namespace USOSmobile.Pages
     {
         public static MauiApp CreateMauiApp()
         {
-            Auth obj = new Auth();
-            obj.requestToken();
+
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -17,6 +16,7 @@ namespace USOSmobile.Pages
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            
 
 #if DEBUG
             builder.Logging.AddDebug();

@@ -65,4 +65,16 @@
 		<PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="110.2.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Pages\PinPage.xaml.cs">
+	    <DependentUpon>PinPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\PinPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

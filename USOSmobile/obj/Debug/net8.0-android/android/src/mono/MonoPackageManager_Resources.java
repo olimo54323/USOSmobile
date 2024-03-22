@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "USOSmobile.dll" comes first in this list. */
 		"USOSmobile.dll",
 		"GoogleGson.dll",
+		"Json.Net.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
 		"Microsoft.Extensions.DependencyInjection.dll",

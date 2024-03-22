@@ -12,35 +12,41 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = USOSmobile
-build_property.ProjectDir = C:\Users\wrobl\Desktop\USOSmobile\USOSmobile\
+build_property.ProjectDir = D:\repos\USOSmobile\USOSmobile\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/wrobl/Desktop/USOSmobile/USOSmobile/App.xaml]
+[D:/repos/USOSmobile/USOSmobile/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/wrobl/Desktop/USOSmobile/USOSmobile/AppShell.xaml]
+[D:/repos/USOSmobile/USOSmobile/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/wrobl/Desktop/USOSmobile/USOSmobile/MainPage.xaml]
+[D:/repos/USOSmobile/USOSmobile/Pages/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Pages.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
 
-[C:/Users/wrobl/Desktop/USOSmobile/USOSmobile/Resources/Styles/Colors.xaml]
+[D:/repos/USOSmobile/USOSmobile/Pages/PinPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Pages.PinPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PinPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PinPage.xaml
+
+[D:/repos/USOSmobile/USOSmobile/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/wrobl/Desktop/USOSmobile/USOSmobile/Resources/Styles/Styles.xaml]
+[D:/repos/USOSmobile/USOSmobile/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace USOSmobile.Models
 {
-    class User
+    internal class User
     {
-        public string FirstName { get; }
-        public string LastName { get; }
+        public int id { get; set; }
+        public string last_name { get; set; }
+        public string first_name { get; set; }
 
-        public User(string firstName, string lastName)
-        {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-        }
+        //public User(int userID, string firstName, string lastName)
+        //{
+        //    UserId = userID;
+        //    FirstName = firstName;
+        //    LastName = lastName;
+        //}
 
-        public static User UserFromJSON(Dictionary<string, dynamic> data)
-        {
-            string fn = data["first_name"];
-            string ln = data["last_name"];
-            return new User(fn, ln);
-        }
+        //public static User UserFromJSON(Dictionary<string, dynamic> data)
+        //{
+        //    string fn = data["first_name"];
+        //    string ln = data["last_name"];
+        //    return new User(fn, ln);
+        //}
     };
 }

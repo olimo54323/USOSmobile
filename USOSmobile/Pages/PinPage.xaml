@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USOSmobile.PinPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Image
+                Source="icon.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+            
+            <Entry
+                x:Name="PINEntry"
+                Placeholder="Podaj PIN"
+                HorizontalOptions="Fill"
+                ClearButtonVisibility="Never"
+                Keyboard="Numeric"
+                MaxLength="8"/>
+
+            <Button
+                x:Name="LoginBtn"
+                Text="Zaloguj"
+                Clicked="OnLoginBtnClicked"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="TestLabel"
+                Text="XDDDDDD"/>
+
+            <Button
+                x:Name="BrowserBtn"
+                Text="Wygeneruj PIN ponownie"
+                Clicked="OnBrowserBtnClicked"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

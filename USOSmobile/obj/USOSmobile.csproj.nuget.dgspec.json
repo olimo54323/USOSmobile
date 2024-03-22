@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\USOSmobile.csproj": {}
+    "D:\\repos\\USOSmobile\\USOSmobile\\USOSmobile.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\USOSmobile.csproj": {
+    "D:\\repos\\USOSmobile\\USOSmobile\\USOSmobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
+        "projectUniqueName": "D:\\repos\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
         "projectName": "USOSmobile",
-        "projectPath": "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
+        "projectPath": "D:\\repos\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
         "packagesPath": "C:\\Users\\wrobl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\obj\\",
+        "outputPath": "D:\\repos\\USOSmobile\\USOSmobile\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

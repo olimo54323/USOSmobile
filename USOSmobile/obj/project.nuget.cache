@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "43CO3PbvxjOkgyniJZ0RdxSSsNhabOWubyXmj5j2WfxpOw1m3I2JALMstU1SusA6Xi7Sj6dlvYuII5ZrcnbOqQ==",
+  "dgSpecHash": "fQ9Q54UX5glUYG9LTVZ/zihZgaoVfhgdxTGHT8nWgrfYwBxzi9dNvkduOFsOLwo+4yJxSId2lj57jOI7KWiA7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wrobl\\Desktop\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
+  "projectFilePath": "D:\\repos\\USOSmobile\\USOSmobile\\USOSmobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wrobl\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\wrobl\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
