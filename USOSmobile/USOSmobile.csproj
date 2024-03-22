@@ -66,13 +66,46 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Pages\PinPage.xaml.cs">
 	    <DependentUpon>PinPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SubPages\ActivityGroups.xaml.cs">
+	    <DependentUpon>ActivityGroups.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SubPages\Exams.xaml.cs">
+	    <DependentUpon>Exams.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SubPages\Grades.xaml.cs">
+	    <DependentUpon>Grades.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SubPages\Schedule.xaml.cs">
+	    <DependentUpon>Schedule.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SubPages\MyUSOS.xaml.cs">
+	    <DependentUpon>MyUSOS.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Pages\PinPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SubPages\ActivityGroups.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SubPages\Exams.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SubPages\Grades.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SubPages\Schedule.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SubPages\MyUSOS.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

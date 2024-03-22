@@ -126,7 +126,7 @@ namespace USOSmobile.Models
             }
          }
 
-        public async Task<User> getUser()
+        public async Task<bool> getUser()
         {
             try
             {
@@ -140,14 +140,21 @@ namespace USOSmobile.Models
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
                                                         parameters);
+                
+                if(response.IsSuccessful)
+                {
+                    Helpers.user = JsonConvert.DeserializeObject<User>(response.Content);
+                    return true;
+                }
+                else
+                    return false;
 
-                User user = JsonConvert.DeserializeObject<User>(response.Content);
-                return user;
+
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("verifyLogin" + ex.ToString());
-                return null;
+                return false;
             }
         }
 

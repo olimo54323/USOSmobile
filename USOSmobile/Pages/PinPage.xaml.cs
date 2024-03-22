@@ -1,4 +1,5 @@
 ﻿using USOSmobile.Models;
+using USOSmobile.SubPages;
 
 namespace USOSmobile
 {
@@ -11,21 +12,19 @@ namespace USOSmobile
 
         private async void OnLoginBtnClicked(object sender, EventArgs e)
         {
-            APIBrowser APIObj = new();
-            await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
-            await APIObj.accessToken();
-            
-
-            //TestLabel.Text = await APIObj.verifyLogin();
-            User user = await APIObj.getUser();
-            TestLabel.Text = $"{user.last_name + " " + user.first_name}";
-         }
+            await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text != "" ? PINEntry.Text : "");
+            await Helpers.apiBrowser.accessToken();
+            bool isLogged = await Helpers.apiBrowser.getUser();
+            if (isLogged)
+                await Shell.Current.GoToAsync($"//{nameof(MyUSOSPage)}");
+            else
+                IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
+        }
 
         private async void OnBrowserBtnClicked(object sender, EventArgs e)
         {
-            APIBrowser APIObj = new();
-            await APIObj.requestToken();
-            await APIObj.PINAuthorization();
+            await Helpers.apiBrowser.requestToken();
+            await Helpers.apiBrowser.PINAuthorization();
         }
     }
 }

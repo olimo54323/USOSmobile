@@ -4,11 +4,47 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:USOSmobile"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:pages="clr-namespace:USOSmobile.Pages"
+    xmlns:subPages="clr-namespace:USOSmobile.SubPages"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="False"
     Title="USOSmobile">
 
     <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage"/>
+    <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:PinPage}"
+        Route="PinPage" />
+
+    <FlyoutItem 
+
+        Route="MyUSOSPage" 
+        FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+                Title="Mój USOS"
+                ContentTemplate="{DataTemplate subPages:MyUSOSPage}"
+                Route="MyUSOSPage"/>
+            <ShellContent
+                Title="Grupy Zajęciowe"
+                ContentTemplate="{DataTemplate subPages:ActivityGroupsPage}"
+                Route="ActivityGroupsPage"/>
+        <ShellContent
+                Title="Plan Zajęć"
+                ContentTemplate="{DataTemplate subPages:SchedulePage}"
+                Route="SchedulePage"/>
+        <ShellContent
+                Title="Oceny"
+                ContentTemplate="{DataTemplate subPages:GradesPage}"
+                Route="GradesPage"/>
+            <ShellContent
+                Title="Egzaminy"
+                ContentTemplate="{DataTemplate subPages:ExamsPage}"
+                Route="ExamsPage"/>
+    </FlyoutItem>
 
 </Shell>
