@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-21T19:58:32.070</Modified>
+      <Modified>2024-03-22T11:53:57.453</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-21T19:58:31.996</Modified>
+      <Modified>2024-03-22T11:53:57.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.runtimeconfig.json">
       <PackagePath>USOSmobile.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.dll">
       <PackagePath>USOSmobile.dll</PackagePath>
-      <Modified>2024-03-21T19:58:31.742</Modified>
+      <Modified>2024-03-22T11:53:57.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>USOSmobile.exe</PackagePath>
-      <Modified>2024-03-21T19:58:31.746</Modified>
+      <Modified>2024-03-22T11:53:57.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -271,7 +271,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.deps.json">
       <PackagePath>USOSmobile.deps.json</PackagePath>
-      <Modified>2024-03-21T18:42:38.422</Modified>
+      <Modified>2024-03-22T10:42:41.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

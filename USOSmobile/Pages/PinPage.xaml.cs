@@ -11,21 +11,21 @@ namespace USOSmobile
 
         private async void OnLoginBtnClicked(object sender, EventArgs e)
         {
-            Auth authObj = new();
+            APIBrowser APIObj = new();
             await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
-            await authObj.accessToken();
+            await APIObj.accessToken();
             
 
-            //TestLabel.Text = await authObj.verifyLogin();
-            User user = await authObj.verifyLogin();
+            //TestLabel.Text = await APIObj.verifyLogin();
+            User user = await APIObj.getUser();
             TestLabel.Text = $"{user.last_name + " " + user.first_name}";
          }
 
         private async void OnBrowserBtnClicked(object sender, EventArgs e)
         {
-            Auth authObj = new();
-            await authObj.requestToken();
-            await authObj.PINAuthorization();
+            APIBrowser APIObj = new();
+            await APIObj.requestToken();
+            await APIObj.PINAuthorization();
         }
     }
 }
