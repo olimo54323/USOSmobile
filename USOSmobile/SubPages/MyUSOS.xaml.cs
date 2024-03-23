@@ -8,6 +8,7 @@ namespace USOSmobile.SubPages
         public MyUSOSPage()
         {
             InitializeComponent();
+            StudentData.Text = $"{"Witaj, " + Helpers.user.first_name + " " +  Helpers.user.last_name}";
         }
     }
 }

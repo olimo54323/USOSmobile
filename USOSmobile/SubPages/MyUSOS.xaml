@@ -11,7 +11,9 @@
                 Source="icon.png"
                 HeightRequest="185"
                 Aspect="AspectFit" />
-
+            <Label
+                x:Name="StudentData"
+                Text="" />
             <Label
                 x:Name="tytuł"
                 Text="MyUSOS Page" />

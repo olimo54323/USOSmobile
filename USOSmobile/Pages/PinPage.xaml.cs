@@ -12,7 +12,13 @@ namespace USOSmobile
 
         private async void OnLoginBtnClicked(object sender, EventArgs e)
         {
-            await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text != "" ? PINEntry.Text : "");
+            if (PINEntry.Text == null)
+            {
+                IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
+                return;
+            }
+            await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
+            PINEntry.Text = null;
             await Helpers.apiBrowser.accessToken();
             bool isLogged = await Helpers.apiBrowser.getUser();
             if (isLogged)
