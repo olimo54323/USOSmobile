@@ -13,10 +13,15 @@
                 Aspect="AspectFit" />
             <Label
                 x:Name="StudentData"
-                Text="" />
+                Text="" 
+                FontSize="Caption"
+                />
             <Label
-                x:Name="tytuł"
+                x:Name="PageTiltle"
                 Text="MyUSOS Page" />
+            <Label
+                x:Name="CoursesID"
+                Text ="" />
         </VerticalStackLayout>
     </ScrollView>
 

@@ -17,11 +17,12 @@ namespace USOSmobile
                 IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
                 return;
             }
+
             await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
             PINEntry.Text = null;
             await Helpers.apiBrowser.accessToken();
-            bool isLogged = await Helpers.apiBrowser.getUser();
-            if (isLogged)
+
+            if (await Helpers.apiBrowser.getUser())
                 await Shell.Current.GoToAsync($"//{nameof(MyUSOSPage)}");
             else
                 IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
