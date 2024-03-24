@@ -21,7 +21,7 @@
                 Text="MyUSOS Page" />
             <Label
                 x:Name="CoursesID"
-                Text ="" />
+                Text =""/>
         </VerticalStackLayout>
     </ScrollView>
 

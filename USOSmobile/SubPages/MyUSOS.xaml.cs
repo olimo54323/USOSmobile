@@ -10,12 +10,11 @@ namespace USOSmobile.SubPages
             InitializeComponent();
             StudentData.Text = $"{"Witaj, " + Helpers.user.first_name + " " +  Helpers.user.last_name}";
 
-            Dictionary<string,dynamic> data = new Dictionary<string,dynamic>();
-            Task.Run(() => Helpers.apiBrowser.getGroupsIdParticipant(data))
+            Task.Run(() => Helpers.apiBrowser.getDiagnosticData("services/terms/terms_index"))
                 .ContinueWith(task =>
                 {
-                    CoursesID.Text = task.Result;
+                    Clipboard.SetTextAsync(task.Result);
                 }, TaskScheduler.FromCurrentSynchronizationContext());
-                }
+         }
     }
 }

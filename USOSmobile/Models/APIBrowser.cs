@@ -126,12 +126,19 @@ namespace USOSmobile.Models
             }
          }
 
-        public async Task<bool> getUser()
+        public async Task<bool> getUser(Dictionary<string, dynamic>? parameters = null)
         {
             try
             {
-                Dictionary<string,dynamic> parameters = new Dictionary<string,dynamic>();
-                parameters["format"] = "json";
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+
+                if (parameters == null)
+                {
+                    localParameters["fields"] = "id|first_name|last_name";
+                    localParameters["format"] = "json";
+                }
+                else
+                    localParameters = parameters;
 
                 RestResponse response = GetProtectedResource("services/users/user",
                                                         await SecureStorage.GetAsync("api_key"),
@@ -139,7 +146,7 @@ namespace USOSmobile.Models
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
-                                                        parameters);
+                                                        localParameters);
                 
                 if(response.IsSuccessful)
                 {
@@ -158,7 +165,7 @@ namespace USOSmobile.Models
             }
         }
 
-        public async Task<User> getGrades(Dictionary<string, dynamic>? parameters)
+        public async Task<User> getGrades(Dictionary<string, dynamic>? parameters = null)
         {
             try
             {
@@ -168,9 +175,7 @@ namespace USOSmobile.Models
                     localParameters["format"] = "json";
                 }
                 else
-                {
                     localParameters = parameters;
-                }
                 
 
                 RestResponse response = GetProtectedResource("services/users/user",
@@ -191,7 +196,7 @@ namespace USOSmobile.Models
             }
         }
 
-        public async Task<string> getGroupsIdParticipant(Dictionary<string, dynamic>? parameters)
+        public async Task<string> getGroupsIdParticipant(Dictionary<string, dynamic>? parameters = null)
         {
             try
             {
@@ -207,6 +212,35 @@ namespace USOSmobile.Models
                
 
                 RestResponse response = GetProtectedResource("services/groups/user",
+                                                        await SecureStorage.GetAsync("api_key"),
+                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        await SecureStorage.GetAsync("oauth_token"),
+                                                        await SecureStorage.GetAsync("oauth_token_secret"),
+                                                        Method.Post,
+                                                        localParameters);
+
+                return response.Content.ToString();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("getGroups" + ex.ToString());
+                return null;
+            }
+        }
+
+
+        public async Task<string> getDiagnosticData(string URLendpoint, Dictionary<string, dynamic>? parameters = null)
+        {
+            try
+            {
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+                if (parameters == null)
+                    localParameters["format"] = "json";
+                else
+                    localParameters = parameters;
+
+
+                RestResponse response = GetProtectedResource(URLendpoint,
                                                         await SecureStorage.GetAsync("api_key"),
                                                         await SecureStorage.GetAsync("api_secret"),
                                                         await SecureStorage.GetAsync("oauth_token"),
