@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-24T16:34:05.211</Modified>
+      <Modified>2024-04-01T21:10:28.675</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-24T16:34:05.142</Modified>
+      <Modified>2024-04-01T21:10:28.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.runtimeconfig.json">
       <PackagePath>USOSmobile.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.dll">
       <PackagePath>USOSmobile.dll</PackagePath>
-      <Modified>2024-03-24T16:34:04.942</Modified>
+      <Modified>2024-04-01T21:10:27.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>USOSmobile.exe</PackagePath>
-      <Modified>2024-03-24T16:34:04.946</Modified>
+      <Modified>2024-04-01T21:10:27.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\USOSmobile\USOSmobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

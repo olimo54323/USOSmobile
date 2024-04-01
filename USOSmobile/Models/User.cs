@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,7 +12,15 @@ namespace USOSmobile.Models
     internal class User
     {
         public int id { get; set; }
-        public string last_name { get; set; }
-        public string first_name { get; set; }
+        public string lastName { get; set; }
+        public string firstName { get; set; }
+
+        public void deserializeUserData(RestResponse data)
+        {
+            dynamic userData = JsonConvert.DeserializeObject<dynamic>(data.Content);
+            id = userData.id;
+            lastName = userData.last_name;
+            firstName = userData.first_name;
+        }
     };
 }

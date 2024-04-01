@@ -18,7 +18,6 @@ namespace USOSmobile.Pages
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services.AddSingleton<APIBrowser>();
-            builder.Services.AddSingleton<User>();
             builder.Services.AddSingleton<PinPage>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<MyUSOSPage>();

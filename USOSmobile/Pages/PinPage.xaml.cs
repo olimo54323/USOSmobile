@@ -14,7 +14,7 @@ namespace USOSmobile
         {
             if (PINEntry.Text == null || PINEntry.Text.Length !=8)
             {
-                IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
+                IsLoggedLabel.Text = "Brak kodu PIN, spróbuj ponownie";
                 return;
             }
             await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);

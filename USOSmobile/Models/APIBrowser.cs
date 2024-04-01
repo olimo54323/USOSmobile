@@ -150,7 +150,7 @@ namespace USOSmobile.Models
                 
                 if(response.IsSuccessful)
                 {
-                    Helpers.user = JsonConvert.DeserializeObject<User>(response.Content);
+                    Helpers.user.deserializeUserData(response);
                     return true;
                 }
                 else
