@@ -8,17 +8,14 @@ namespace USOSmobile.Models
 {
     internal class UserCourseGroup
     {
-        public Course course {  get; set; }
-        public string groupNumber { get; set; }
-        public Dictionary<string, string> classType { get; set; } //keys: pl, en
-        public string classTypeID { get; set; }
-        public string groupURL { get; set; }
-        public string courseID { get; set; }
-        public string courseHomepageURL { get; set; }
-        public string courseProfileURL { get; set; }
-        public string courseIsCurrentlyConducted { get; set; }
-        public string courseFacultyID { get; set; }
-        public string courseLanguageID { get; set; }
+        public Dictionary<string, string> class_type { get; set; } //keys: pl, en
+        public string class_type_id { get; set; }
+        public string group_url { get; set; }
+        public string course_homepage_url { get; set; }
+        public string course_profile_url { get; set; }
+        public string course_is_currently_conducted { get; set; }
+        public string course_fac_id { get; set; }
+        public string course_lang_id { get; set; }
         public List<User> lecturers { get; set; }
         public List<User> participants { get; set; }
     }

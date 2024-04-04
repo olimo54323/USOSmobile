@@ -12,15 +12,12 @@ namespace USOSmobile.Models
     internal class User
     {
         public int id { get; set; }
-        public string lastName { get; set; }
-        public string firstName { get; set; }
+        public string last_name { get; set; }
+        public string first_name { get; set; }
 
-        public void deserializeUserData(RestResponse data)
+        public User deserializeUserData(RestResponse data)
         {
-            dynamic userData = JsonConvert.DeserializeObject<dynamic>(data.Content);
-            id = userData.id;
-            lastName = userData.last_name;
-            firstName = userData.first_name;
+            return JsonConvert.DeserializeObject<User>(data.Content);
         }
     };
 }

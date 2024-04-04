@@ -150,7 +150,7 @@ namespace USOSmobile.Models
                 
                 if(response.IsSuccessful)
                 {
-                    Helpers.user.deserializeUserData(response);
+                    Helpers.user = Helpers.user.deserializeUserData(response);
                     return true;
                 }
                 else
@@ -225,6 +225,39 @@ namespace USOSmobile.Models
             {
                 Debug.WriteLine("getGroups" + ex.ToString());
                 return null;
+            }
+        }
+
+        public async /*Task<string>*/ Task getCourses(Dictionary<string, dynamic>? parameters = null)
+        {
+            try
+            {
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+                if (parameters == null)
+                {
+                    //localParameters["active_terms"] = "false";
+                    localParameters["lang"] = "pl";
+                    localParameters["format"] = "json";
+                }
+                else
+                    localParameters = parameters;
+
+
+                RestResponse response = GetProtectedResource("services/courses/user",
+                                                        await SecureStorage.GetAsync("api_key"),
+                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        await SecureStorage.GetAsync("oauth_token"),
+                                                        await SecureStorage.GetAsync("oauth_token_secret"),
+                                                        Method.Post,
+                                                        localParameters);
+
+                //return Helpers.course.deserializeCourseData(response);
+                Helpers.courses = Helpers.courses.deserializeCourseData(response);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("getGroups" + ex.ToString());
+                //return null;
             }
         }
 
