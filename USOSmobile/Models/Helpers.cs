@@ -10,6 +10,6 @@ namespace USOSmobile.Models
     {
         static public User user = new User();
         static public APIBrowser apiBrowser = new APIBrowser();
-        static public Dictionary<string, Dictionary<string, Courses>> courses = new Dictionary<string, Dictionary<string, Courses>>(); //first key - termID, second key - courseID
+        static public UserCourses userCourses = new UserCourses();
     }
 }

@@ -19,5 +19,5 @@ namespace USOSmobile.Models
         {
             return JsonConvert.DeserializeObject<User>(data.Content);
         }
-    };
+    }
 }

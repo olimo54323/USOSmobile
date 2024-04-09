@@ -16,13 +16,10 @@ namespace USOSmobile.Models
         private readonly string AuthorizeURL = "https://usosapi.polsl.pl/services/oauth/authorize";
         private readonly string AccessTokenURL = "https://usosapi.polsl.pl/services/oauth/access_token";
 
-        private readonly List<string> scopes = ["cards", "crstests", "email", "events", "grades", /*"offline_access", "payments",*/ "student_exams", "studies"];
+        private readonly string api_key = "CgjEJKEVYZJd6kNMguyV";
+        private readonly string api_secret = "dErz5k88FKwK7fwYg5D25qEKyJGt8Se3uxZqZVPn";
 
-        public APIBrowser()
-        {
-            SecureStorage.SetAsync("api_key", "CgjEJKEVYZJd6kNMguyV").Wait();
-            SecureStorage.SetAsync("api_secret", "dErz5k88FKwK7fwYg5D25qEKyJGt8Se3uxZqZVPn").Wait();
-        }
+        private readonly List<string> scopes = ["cards", "crstests", "email", "events", "grades", /*"offline_access", "payments",*/ "student_exams", "studies"];
 
         public RestResponse GetProtectedResource(string URLEndPoint,
                                                                                                         string customerKey,
@@ -62,8 +59,7 @@ namespace USOSmobile.Models
             {
                 RestClientOptions options = new RestClientOptions(BaseURL)
                 {
-                    Authenticator = OAuth1Authenticator.ForRequestToken(await SecureStorage.GetAsync("api_key"),
-                                                                                                                await SecureStorage.GetAsync("api_secret"))
+                    Authenticator = OAuth1Authenticator.ForRequestToken(api_key, api_secret)
                 };
                 RestRequest request = new RestRequest(RequestTokenURL, Method.Post);
                 request.AddParameter("oauth_callback", "oob");
@@ -105,8 +101,8 @@ namespace USOSmobile.Models
             {
                 dynamic options = new RestClientOptions(BaseURL)
                 {
-                    Authenticator = OAuth1Authenticator.ForAccessToken(await SecureStorage.GetAsync("api_key"),
-                                                                                                                await SecureStorage.GetAsync("api_secret"),
+                    Authenticator = OAuth1Authenticator.ForAccessToken(api_key,
+                                                                                                                api_secret,
                                                                                                                 await SecureStorage.GetAsync("oauth_token"),
                                                                                                                 await SecureStorage.GetAsync("oauth_token_secret"),
                                                                                                                 await SecureStorage.GetAsync("oauth_verifier"))
@@ -141,8 +137,8 @@ namespace USOSmobile.Models
                     localParameters = parameters;
 
                 RestResponse response = GetProtectedResource("services/users/user",
-                                                        await SecureStorage.GetAsync("api_key"),
-                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        api_key,
+                                                        api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
@@ -179,8 +175,8 @@ namespace USOSmobile.Models
                 
 
                 RestResponse response = GetProtectedResource("services/users/user",
-                                                        await SecureStorage.GetAsync("api_key"),
-                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        api_key,
+                                                        api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
@@ -212,8 +208,8 @@ namespace USOSmobile.Models
                
 
                 RestResponse response = GetProtectedResource("services/groups/user",
-                                                        await SecureStorage.GetAsync("api_key"),
-                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        api_key,
+                                                        api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
@@ -228,7 +224,7 @@ namespace USOSmobile.Models
             }
         }
 
-        public async /*Task<string>*/ Task getCourses(Dictionary<string, dynamic>? parameters = null)
+        public async Task<bool>getCourses(Dictionary<string, dynamic>? parameters = null)
         {
             try
             {
@@ -244,20 +240,24 @@ namespace USOSmobile.Models
 
 
                 RestResponse response = GetProtectedResource("services/courses/user",
-                                                        await SecureStorage.GetAsync("api_key"),
-                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        api_key,
+                                                        api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
                                                         localParameters);
-
-                //return Helpers.course.deserializeCourseData(response);
-                Helpers.courses = Helpers.courses.deserializeCourseData(response);
+                if (response.IsSuccessful)
+                {
+                    Helpers.userCourses = Helpers.userCourses.deserializeCoursesData(response);
+                    return true;
+                }
+                else
+                    return false;
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("getGroups" + ex.ToString());
-                //return null;
+                return false;
             }
         }
 
@@ -274,8 +274,8 @@ namespace USOSmobile.Models
 
 
                 RestResponse response = GetProtectedResource(URLendpoint,
-                                                        await SecureStorage.GetAsync("api_key"),
-                                                        await SecureStorage.GetAsync("api_secret"),
+                                                        api_key,
+                                                        api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
