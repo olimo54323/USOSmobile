@@ -39,7 +39,8 @@ namespace USOSmobile.SubPages
                             Dictionary<string, dynamic> subsubdata = new Dictionary<string, dynamic>();
                             subsubdata["unit_id"] = subsubitem.course_unit_id;
                             subsubdata["group_number"] = subsubitem.group_number;
-                            Clipboard.SetTextAsync(await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata));
+                            string subLine = (await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata)) != "[]" ? await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata) : "";
+                            lines += "\t\t" + subLine + "\n";
                         }
                     }
                     lines += "\n";
