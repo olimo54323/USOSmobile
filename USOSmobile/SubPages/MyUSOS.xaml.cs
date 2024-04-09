@@ -16,25 +16,30 @@ namespace USOSmobile.SubPages
             //        Clipboard.SetTextAsync(task.Result);
             //    }, TaskScheduler.FromCurrentSynchronizationContext());
 
-            
+
         }
 
         private async void DataBtn_Clicked(object sender, EventArgs e)
         {
             Dictionary<string, dynamic> data = new Dictionary<string, dynamic>();
             data["active_terms_only"] = "false";
-            if(await Helpers.apiBrowser.getCourses(data))
+            bool isCoursesGet = await Helpers.apiBrowser.getCourses(data);
+            if (isCoursesGet)
             {
-                string lines ="";
+                string lines = "";
                 foreach (dynamic item in Helpers.userCourses.courses)
                 {
                     lines += item.Key + "\n";
                     foreach (dynamic subitem in item.Value.termCourses)
                     {
                         lines += "\t" + subitem.course_name.pl + "\n";
-                        foreach(dynamic subsubitem in subitem.user_groups)
+                        foreach (dynamic subsubitem in subitem.user_groups)
                         {
                             lines += "\t\t" + subsubitem.class_type.pl + ", grupa: " + subsubitem.group_number + "\n";
+                            Dictionary<string, dynamic> subsubdata = new Dictionary<string, dynamic>();
+                            subsubdata["unit_id"] = subsubitem.course_unit_id;
+                            subsubdata["group_number"] = subsubitem.group_number;
+                            Clipboard.SetTextAsync(await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata));
                         }
                     }
                     lines += "\n";
