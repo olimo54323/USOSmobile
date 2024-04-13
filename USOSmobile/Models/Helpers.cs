@@ -11,5 +11,6 @@ namespace USOSmobile.Models
         static public User user = new User();
         static public APIBrowser apiBrowser = new APIBrowser();
         static public UserCourses userCourses = new UserCourses();
+        static public TimeTables timeTables = new TimeTables();
     }
 }

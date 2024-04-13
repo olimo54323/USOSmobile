@@ -59,6 +59,7 @@ namespace USOSmobile.Models
         public UserCourses deserializeCoursesData(RestResponse data)
         {
             dynamic coursesData = JsonConvert.DeserializeObject<dynamic>(data.Content);
+
             if (coursesData == null)
                 return null;
 
@@ -96,84 +97,18 @@ namespace USOSmobile.Models
                         newGroup.participants = new List<User>();
 
                         foreach (dynamic lecturer in group.lecturers)
-                        {
                             newGroup.lecturers.Add(new User { id = lecturer.id, first_name = lecturer.first_name, last_name = lecturer.last_name });
-                        }
 
                         foreach (dynamic participant in group.participants)
-                        {
                             newGroup.participants.Add(new User { id = participant.id, first_name = participant.first_name, last_name = participant.last_name });
-                        }
 
                         newCourse.user_groups.Add(newGroup);
                     }
-
                     termCourses.termCourses.Add(newCourse);
                 }
-
                 courses[termCourses.term_id] = termCourses;
             }
-
             return this;
         }
-
-        public string showCourseData(string term_id)
-        {
-            StringBuilder sb = new StringBuilder();
-
-            if (term_id == null)
-                foreach (var term in courses.Keys)
-                {
-                sb.AppendLine(showCourseData(term));
-                }
-
-            TermCourses termCourses = courses[term_id];
-
-            sb.AppendLine($"Term id: {termCourses.term_id}");
-
-            foreach (dynamic course in termCourses.termCourses)
-            {
-                sb.AppendLine($"Course id: {course.course_id}");
-                sb.AppendLine($"Course name (PL): {course.course_name.pl}");
-                sb.AppendLine($"Course name (EN): {course.course_name.en}");
-                 sb.AppendLine($"Term id: {course.term_id}");
-
-                    foreach (dynamic group in course.user_Groups)
-                    {
-                        sb.AppendLine($"Course unit id: {group.course_unit_id}");
-                        sb.AppendLine($"Group number: {group.group_number}");
-                        sb.AppendLine($"Class type (PL): {group.class_type.pl}");
-                        sb.AppendLine($"Class type (EN): {group.class_type.en}");
-                        sb.AppendLine($"Class type id: {group.class_type_id}");
-                        sb.AppendLine($"Group url: {group.group_url}");
-                        sb.AppendLine($"Course id: {group.course_id}");
-                        sb.AppendLine($"Course name (PL): {group.course_name.pl}");
-                        sb.AppendLine($"Course name (EN): {group.course_name.en}");
-                        sb.AppendLine($"Course homepage url: {group.course_homepage_url}");
-                        sb.AppendLine($"Course profile url: {group.course_profile_url}");
-                        sb.AppendLine($"Course is currently conducted: {group.course_is_currently_conducted}");
-                        sb.AppendLine($"Course fac id: {group.course_fac_id}");
-                        sb.AppendLine($"Course lang id: {group.course_lang_id}");
-                        sb.AppendLine($"Term id: {group.term_id}");
-
-                        foreach (var lecturer in group.lecturers)
-                        {
-                            sb.AppendLine($"Lecturer id: {lecturer.id}");
-                            sb.AppendLine($"Lecturer first name: {lecturer.first_name}");
-                            sb.AppendLine($"Lecturer last name: {lecturer.last_name}");
-                        }
-
-                        foreach (var participant in group.participants)
-                        {
-                            sb.AppendLine($"Participant id: {participant.id}");
-                            sb.AppendLine($"Participant first name: {participant.first_name}");
-                            sb.AppendLine($"Participant last name: {participant.last_name}");
-                        }
-                    }
-                }
-                return sb.ToString();
-        }
-
-
     }
 }

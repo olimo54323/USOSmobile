@@ -52,7 +52,6 @@ namespace USOSmobile.Models
             }
         }
 
-
         public async Task requestToken()
         {
             try
@@ -79,7 +78,6 @@ namespace USOSmobile.Models
             }
         }
 
-
         public async Task PINAuthorization()
         {
             string urlToOpen = AuthorizeURL + "?oauth_token=" + await SecureStorage.GetAsync("oauth_token");
@@ -93,7 +91,6 @@ namespace USOSmobile.Models
                 Debug.WriteLine("PinAuthorization" +ex.ToString());
             }
         }
-
 
         public async Task accessToken()
         {
@@ -151,8 +148,6 @@ namespace USOSmobile.Models
                 }
                 else
                     return false;
-
-
             }
             catch (Exception ex)
             {
@@ -161,68 +156,36 @@ namespace USOSmobile.Models
             }
         }
 
-        public async Task<User> getGrades(Dictionary<string, dynamic>? parameters = null)
-        {
-            try
-            {
-                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
-                if (parameters == null)
-                {
-                    localParameters["format"] = "json";
-                }
-                else
-                    localParameters = parameters;
+        //public async Task<bool> getGrades(Dictionary<string, dynamic>? parameters = null)
+        //{
+        //    try
+        //    {
+        //        Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+        //        if (parameters == null)
+        //        {
+        //            localParameters["format"] = "json";
+        //        }
+        //        else
+        //            localParameters = parameters;
                 
 
-                RestResponse response = GetProtectedResource("services/users/user",
-                                                        api_key,
-                                                        api_secret,
-                                                        await SecureStorage.GetAsync("oauth_token"),
-                                                        await SecureStorage.GetAsync("oauth_token_secret"),
-                                                        Method.Post,
-                                                        localParameters);
+        //        RestResponse response = GetProtectedResource("services/users/user",
+        //                                                api_key,
+        //                                                api_secret,
+        //                                                await SecureStorage.GetAsync("oauth_token"),
+        //                                                await SecureStorage.GetAsync("oauth_token_secret"),
+        //                                                Method.Post,
+        //                                                localParameters);
 
-                User user = JsonConvert.DeserializeObject<User>(response.Content);
-                return user;
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("getGrages" + ex.ToString());
-                return null;
-            }
-        }
 
-        public async Task<string> getGroupsIdParticipant(Dictionary<string, dynamic>? parameters = null)
-        {
-            try
-            {
-                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
-                if (parameters == null)
-                {
-                    localParameters["active_terms"] = "false";
-                    localParameters["lang"] = "pl";
-                    localParameters["format"] = "json";
-                }
-                else
-                    localParameters = parameters;
-               
-
-                RestResponse response = GetProtectedResource("services/groups/user",
-                                                        api_key,
-                                                        api_secret,
-                                                        await SecureStorage.GetAsync("oauth_token"),
-                                                        await SecureStorage.GetAsync("oauth_token_secret"),
-                                                        Method.Post,
-                                                        localParameters);
-
-                return response.Content.ToString();
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("getGroups" + ex.ToString());
-                return null;
-            }
-        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine("getGrages" + ex.ToString());
+        //        return false;
+        //    }
+        //}
 
         public async Task<bool>getCourses(Dictionary<string, dynamic>? parameters = null)
         {
@@ -261,6 +224,36 @@ namespace USOSmobile.Models
             }
         }
 
+        public async Task<bool>getTimetables(Dictionary<string, dynamic>? parameters = null)
+        {
+            try
+            {
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+                if (parameters == null)
+                {
+                    localParameters["format"] = "json";
+                }
+                else
+                    localParameters = parameters;
+
+
+                RestResponse response = GetProtectedResource("services/tt/classgroup",
+                                                        api_key,
+                                                        api_secret,
+                                                        await SecureStorage.GetAsync("oauth_token"),
+                                                        await SecureStorage.GetAsync("oauth_token_secret"),
+                                                        Method.Post,
+                                                        localParameters);
+
+                Helpers.timeTables = Helpers.timeTables.DeserializeTimeTableData(response, parameters["unit_id"], parameters["group_number"]);
+                
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
         public async Task<string> getDiagnosticData(string URLendpoint, Dictionary<string, dynamic>? parameters = null)
         {

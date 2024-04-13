@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-09T12:10:25.418</Modified>
+      <Modified>2024-04-13T08:45:37.498</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-09T12:10:25.343</Modified>
+      <Modified>2024-04-13T08:45:37.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.runtimeconfig.json">
       <PackagePath>USOSmobile.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-05T15:00:38.498</Modified>
+      <Modified>2024-04-13T08:23:30.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.dll">
       <PackagePath>USOSmobile.dll</PackagePath>
-      <Modified>2024-04-09T12:10:25.135</Modified>
+      <Modified>2024-04-13T08:45:37.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>USOSmobile.exe</PackagePath>
-      <Modified>2024-04-09T12:10:25.139</Modified>
+      <Modified>2024-04-13T08:45:37.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -271,7 +271,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\USOSmobile.deps.json">
       <PackagePath>USOSmobile.deps.json</PackagePath>
-      <Modified>2024-04-05T15:00:38.476</Modified>
+      <Modified>2024-04-13T08:23:30.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wrobl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

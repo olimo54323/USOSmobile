@@ -1,4 +1,5 @@
-﻿using USOSmobile.Models;
+﻿using System.Xml;
+using USOSmobile.Models;
 
 namespace USOSmobile.SubPages
 {
@@ -39,8 +40,14 @@ namespace USOSmobile.SubPages
                             Dictionary<string, dynamic> subsubdata = new Dictionary<string, dynamic>();
                             subsubdata["unit_id"] = subsubitem.course_unit_id;
                             subsubdata["group_number"] = subsubitem.group_number;
-                            string subLine = (await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata)) != "[]" ? await Helpers.apiBrowser.getDiagnosticData("services/tt/classgroup", subsubdata) : "";
-                            lines += "\t\t" + subLine + "\n";
+                            bool isTableGet = await Helpers.apiBrowser.getTimetables(subsubdata);
+                            if (isTableGet)
+                            {
+                                TimeTable timetable = Helpers.timeTables.GetTimeTable(subsubitem.course_unit_id, subsubitem.group_number);
+
+                                if (timetable.group_number != -1)
+                                    lines += "\t\t" + timetable.start_date + " " + timetable.end_date + "\n";
+                            }
                         }
                     }
                     lines += "\n";
