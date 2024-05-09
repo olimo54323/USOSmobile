@@ -16,47 +16,36 @@ namespace USOSmobile.Models
     }
     internal class TimeTable
     {
-        public string course_unit_id{ get; set; } 
-        public int group_number { get; set; }
         public DateTime? start_date { get; set; }
         public DateTime? end_date { get; set; }
-        public Name? name { get; set; } = new Name();
-        public TimeTable() 
-        {
-            group_number = -1;
-        }
+        public Name? name { get; set; }
     }
 
     internal class TimeTables
     {
-        IList<TimeTable> tables = new List<TimeTable>();
-        public TimeTables DeserializeTimeTableData(RestResponse data, string courseUnitId, int groupNumber)
+        public List<TimeTable> tables = new List<TimeTable>();
+        static public TimeTables DeserializeTimeTableData(RestResponse data)
         {
             dynamic ttData = JsonConvert.DeserializeObject<dynamic>(data.Content);
 
             if (ttData == null)
                 return null;
 
-            TimeTables ttList = new TimeTables();
+            TimeTables TTs = new TimeTables();
 
             foreach (dynamic time in ttData)
             {
-                TimeTable tt = new TimeTable { course_unit_id = courseUnitId, group_number = groupNumber };
-                tt.start_date = DateTime.ParseExact(time.start_date.Value, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-                tt.end_date = DateTime.ParseExact(time.end_date.Value, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-                tt.name = new Name { pl = time.name.pl, en = time.name.en };
-                ttList.tables.Add(tt);
+                TimeTable tt = new TimeTable();
+                tt.start_date = DateTime.ParseExact(time.start_time.Value, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                tt.end_date = DateTime.ParseExact(time.end_time.Value, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                tt.name = new Name
+                {
+                    pl = time.name.pl,
+                    en = time.name.en
+                };
+                TTs.tables.Add(tt);
             }
-            return ttList;
-        }
-
-        public TimeTable GetTimeTable(string courseUnitId, int groupNumber)
-        {
-            foreach (TimeTable timetable in Helpers.timeTables.tables)
-                if(timetable.course_unit_id == courseUnitId && timetable.group_number == groupNumber)
-                    return timetable;
-
-            return new TimeTable();
+            return TTs;
         }
     }
 }

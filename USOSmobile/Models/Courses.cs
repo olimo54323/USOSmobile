@@ -42,20 +42,19 @@ namespace USOSmobile.Models
         public string course_fac_id { get; set; }
         public string course_lang_id { get; set; }
         public string term_id { get; set; }
-        public IList<User> lecturers { get; set; }
-        public IList<User> participants { get; set; }
-
+        public List<User> lecturers { get; set; }
+        public List<User> participants { get; set; }
     }
 
     internal class TermCourses
     {
         public string term_id { get; set; }
-        public IList<Course> termCourses;
+        public List<Course> termCourses;
     }
 
     internal class UserCourses
     {
-        public IDictionary<string, TermCourses> courses = new Dictionary<string, TermCourses>();
+        public Dictionary<string, TermCourses> courses = new Dictionary<string, TermCourses>();
         public UserCourses deserializeCoursesData(RestResponse data)
         {
             dynamic coursesData = JsonConvert.DeserializeObject<dynamic>(data.Content);

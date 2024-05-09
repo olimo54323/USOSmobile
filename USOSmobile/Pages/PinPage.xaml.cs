@@ -18,8 +18,8 @@ namespace USOSmobile
                 return;
             }
             await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
-            await Helpers.apiBrowser.accessToken();
-            bool isLogged = await Helpers.apiBrowser.getUser();
+            await ModelObjects.apiBrowser.accessToken();
+            bool isLogged = await ModelObjects.apiBrowser.getUser();
             if (isLogged)
                 await Shell.Current.GoToAsync($"//{nameof(MyUSOSPage)}");
             else
@@ -28,8 +28,8 @@ namespace USOSmobile
 
         private async void OnBrowserBtnClicked(object sender, EventArgs e)
         {
-            await Helpers.apiBrowser.requestToken();
-            await Helpers.apiBrowser.PINAuthorization();
+            await ModelObjects.apiBrowser.requestToken();
+            await ModelObjects.apiBrowser.PINAuthorization();
         }
     }
 }

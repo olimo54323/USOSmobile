@@ -1,9 +1,7 @@
-﻿using System.Text.Json;
+﻿using RestSharp;
+using RestSharp.Authenticators;
 using System.Diagnostics;
 using System.Web;
-using RestSharp.Authenticators;
-using RestSharp;
-using Newtonsoft.Json;
 
 
 
@@ -19,15 +17,15 @@ namespace USOSmobile.Models
         private readonly string api_key = "CgjEJKEVYZJd6kNMguyV";
         private readonly string api_secret = "dErz5k88FKwK7fwYg5D25qEKyJGt8Se3uxZqZVPn";
 
-        private readonly List<string> scopes = ["cards", "crstests", "email", "events", "grades", /*"offline_access", "payments",*/ "student_exams", "studies"];
+        private readonly List<string> scopes = ["cards", "crstests", "email", "events", "grades", /*"offline_access",*/ "payments", "student_exams", "studies"];
 
         public RestResponse GetProtectedResource(string URLEndPoint,
-                                                                                                        string customerKey,
-                                                                                                        string customerSecret,
-                                                                                                        string token,
-                                                                                                        string tokenSecret,
-                                                                                                        Method method,
-                                                                                                        Dictionary<string, dynamic> data)
+                                                 string customerKey,
+                                                 string customerSecret,
+                                                 string token,
+                                                 string tokenSecret,
+                                                 Method method,
+                                                 Dictionary<string, dynamic> data)
         {
             try
             {
@@ -99,10 +97,10 @@ namespace USOSmobile.Models
                 dynamic options = new RestClientOptions(BaseURL)
                 {
                     Authenticator = OAuth1Authenticator.ForAccessToken(api_key,
-                                                                                                                api_secret,
-                                                                                                                await SecureStorage.GetAsync("oauth_token"),
-                                                                                                                await SecureStorage.GetAsync("oauth_token_secret"),
-                                                                                                                await SecureStorage.GetAsync("oauth_verifier"))
+                                                                       api_secret,
+                                                                       await SecureStorage.GetAsync("oauth_token"),
+                                                                       await SecureStorage.GetAsync("oauth_token_secret"),
+                                                                       await SecureStorage.GetAsync("oauth_verifier"))
                 };
                 RestRequest request = new RestRequest(AccessTokenURL, Method.Post);
                 RestClient client = new RestClient(options);
@@ -134,16 +132,16 @@ namespace USOSmobile.Models
                     localParameters = parameters;
 
                 RestResponse response = GetProtectedResource("services/users/user",
-                                                        api_key,
-                                                        api_secret,
-                                                        await SecureStorage.GetAsync("oauth_token"),
-                                                        await SecureStorage.GetAsync("oauth_token_secret"),
-                                                        Method.Post,
-                                                        localParameters);
+                                                             api_key,
+                                                             api_secret,
+                                                             await SecureStorage.GetAsync("oauth_token"),
+                                                             await SecureStorage.GetAsync("oauth_token_secret"),
+                                                             Method.Post,
+                                                             localParameters);
                 
                 if(response.IsSuccessful)
                 {
-                    Helpers.user = Helpers.user.deserializeUserData(response);
+                    ModelObjects.user = ModelObjects.user.deserializeUserData(response);
                     return true;
                 }
                 else
@@ -203,15 +201,15 @@ namespace USOSmobile.Models
 
 
                 RestResponse response = GetProtectedResource("services/courses/user",
-                                                        api_key,
-                                                        api_secret,
-                                                        await SecureStorage.GetAsync("oauth_token"),
-                                                        await SecureStorage.GetAsync("oauth_token_secret"),
-                                                        Method.Post,
-                                                        localParameters);
+                                                             api_key,
+                                                             api_secret,
+                                                             await SecureStorage.GetAsync("oauth_token"),
+                                                             await SecureStorage.GetAsync("oauth_token_secret"),
+                                                             Method.Post,
+                                                             localParameters);
                 if (response.IsSuccessful)
                 {
-                    Helpers.userCourses = Helpers.userCourses.deserializeCoursesData(response);
+                    ModelObjects.userCourses = ModelObjects.userCourses.deserializeCoursesData(response);
                     return true;
                 }
                 else
@@ -238,14 +236,15 @@ namespace USOSmobile.Models
 
 
                 RestResponse response = GetProtectedResource("services/tt/classgroup",
-                                                        api_key,
-                                                        api_secret,
-                                                        await SecureStorage.GetAsync("oauth_token"),
-                                                        await SecureStorage.GetAsync("oauth_token_secret"),
-                                                        Method.Post,
-                                                        localParameters);
+                                                             api_key,
+                                                             api_secret,
+                                                             await SecureStorage.GetAsync("oauth_token"),
+                                                             await SecureStorage.GetAsync("oauth_token_secret"),
+                                                             Method.Post,
+                                                             localParameters);
 
-                Helpers.timeTables = Helpers.timeTables.DeserializeTimeTableData(response, parameters["unit_id"], parameters["group_number"]);
+                TimeTables temp = TimeTables.DeserializeTimeTableData(response);
+                ModelObjects.timeTables.Add((localParameters["unit_id"], localParameters["group_number"]), temp);
                 
                 return true;
             }

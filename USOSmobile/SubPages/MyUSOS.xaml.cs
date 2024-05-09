@@ -1,5 +1,6 @@
 ﻿using System.Xml;
 using USOSmobile.Models;
+using System.IO;
 
 namespace USOSmobile.SubPages
 {
@@ -8,14 +9,17 @@ namespace USOSmobile.SubPages
         public MyUSOSPage()
         {
             InitializeComponent();
-            StudentData.Text = $"{"Witaj, " + Helpers.user.first_name + " " +  Helpers.user.last_name}";
-            ////Task.Run(() => Helpers.apiBrowser.getDiagnosticData("services/terms/terms_index"))    //wszystkie roczniki
-            //Task.Run(() => Helpers.apiBrowser.getDiagnosticData("services/courses/user"))
-            //    .ContinueWith(task =>
-            //    {
-            //        CoursesID.Text = task.Result;
-            //        Clipboard.SetTextAsync(task.Result);
-            //    }, TaskScheduler.FromCurrentSynchronizationContext());
+            StudentData.Text = $"{"Witaj, " + ModelObjects.user.first_name + " " +  ModelObjects.user.last_name}";
+            //Task.Run(() => Helpers.apiBrowser.getDiagnosticData("services/terms/terms_index"))    //wszystkie roczniki
+            //Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/payments/user_payments"))
+            Dictionary<string, dynamic> data = new Dictionary<string, dynamic>();
+            data["term_ids"] = "2022/2023-L";
+            Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/examrep/user", data))
+                .ContinueWith(task =>
+                {
+                    CoursesID.Text = task.Result;
+                    Clipboard.SetTextAsync(task.Result);
+                }, TaskScheduler.FromCurrentSynchronizationContext());
 
 
         }
@@ -24,11 +28,11 @@ namespace USOSmobile.SubPages
         {
             Dictionary<string, dynamic> data = new Dictionary<string, dynamic>();
             data["active_terms_only"] = "false";
-            bool isCoursesGet = await Helpers.apiBrowser.getCourses(data);
+            bool isCoursesGet = await ModelObjects.apiBrowser.getCourses(data);
             if (isCoursesGet)
             {
                 string lines = "";
-                foreach (dynamic item in Helpers.userCourses.courses)
+                foreach (dynamic item in ModelObjects.userCourses.courses)
                 {
                     lines += item.Key + "\n";
                     foreach (dynamic subitem in item.Value.termCourses)
@@ -40,14 +44,15 @@ namespace USOSmobile.SubPages
                             Dictionary<string, dynamic> subsubdata = new Dictionary<string, dynamic>();
                             subsubdata["unit_id"] = subsubitem.course_unit_id;
                             subsubdata["group_number"] = subsubitem.group_number;
-                            bool isTableGet = await Helpers.apiBrowser.getTimetables(subsubdata);
+                            bool isTableGet = await ModelObjects.apiBrowser.getTimetables(subsubdata);
                             if (isTableGet)
                             {
-                                TimeTable timetable = Helpers.timeTables.GetTimeTable(subsubitem.course_unit_id, subsubitem.group_number);
-
-                                if (timetable.group_number != -1)
-                                    lines += "\t\t" + timetable.start_date + " " + timetable.end_date + "\n";
+                                foreach (dynamic table in ModelObjects.timeTables[(subsubdata["unit_id"], subsubdata["group_number"])].tables)
+                                {
+                                   lines += "\t\t\t" + table.start_date.ToString("HH:mm") + " " + table.end_date.ToString("HH:mm") + "\n";
+                                }
                             }
+                            
                         }
                     }
                     lines += "\n";
