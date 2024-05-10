@@ -12,7 +12,7 @@ namespace USOSmobile.Models
         static public APIBrowser apiBrowser = new APIBrowser();
         static public UserCourses userCourses = new UserCourses();
         static public Dictionary<(dynamic, dynamic), TimeTables> timeTables = new Dictionary<(dynamic, dynamic),TimeTables>(); //unit_id, group_number
-        static public Dictionary<(dynamic, dynamic), Course_grade> courseGrades = new Dictionary<(dynamic, dynamic), Course_grade>(); //term_ids, unit_id
+        static public Dictionary<(dynamic, dynamic), ExamReports> examReports = new Dictionary<(dynamic, dynamic), ExamReports>(); //term_ids, unit_id
 
     }
 }

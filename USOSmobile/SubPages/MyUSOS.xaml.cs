@@ -10,11 +10,15 @@ namespace USOSmobile.SubPages
         {
             InitializeComponent();
             StudentData.Text = $"{"Witaj, " + ModelObjects.user.first_name + " " +  ModelObjects.user.last_name}";
+
+            //Dictionary<string, dynamic> data = new Dictionary<string, dynamic>();
+            //data["active_terms_only"] = "false";
+            //data["term_ids"] = "2022/2023-L";
+
             //Task.Run(() => Helpers.apiBrowser.getDiagnosticData("services/terms/terms_index"))    //wszystkie roczniki
             //Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/payments/user_payments"))
-            Dictionary<string, dynamic> data = new Dictionary<string, dynamic>();
-            data["term_ids"] = "2022/2023-L";
-            Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/examrep/user", data))
+            //Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/examrep/user", data))
+            Task.Run(() => ModelObjects.apiBrowser.getDiagnosticData("services/courses/user", data))
                 .ContinueWith(task =>
                 {
                     CoursesID.Text = task.Result;
@@ -59,7 +63,6 @@ namespace USOSmobile.SubPages
                 }
                 CoursesID.Text = lines;
             }
-            //CoursesID.Text = Helpers.userCourses.showCourseData("2023/2024-L");
         }
     }
 }

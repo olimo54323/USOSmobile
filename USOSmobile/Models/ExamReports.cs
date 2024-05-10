@@ -1,9 +1,9 @@
-﻿using AndroidX.Annotations;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,32 +11,45 @@ namespace USOSmobile.Models
 {
     internal class Type_description
     {
-        string pl;
-        string en;
+        public string pl { get; set; }
+        public string en { get; set; }
     }
-    internal class Course_grade
+    internal class ExamReports
     {
-        string id;
-        string type_id;
-        Type_description type_description;
+        string id { get; set; }
+        string type_id { get; set; }
+        Type_description type_description { get; set; }
 
-        public Dictionary<(dynamic, dynamic), Course_grade> deserializeCourseGradeData(RestResponse data)
+        static public bool deserializeExamReportsData(RestResponse data, ref Dictionary<(dynamic, dynamic), ExamReports> dict)
         {
-            dynamic cgData = JsonConvert.DeserializeObject<dynamic>(data.Content);
+            dynamic courseGradesData = JsonConvert.DeserializeObject<dynamic>(data.Content);
 
-            if (cgData == null)
-                return null;
+            if (courseGradesData == null)
+                return false;
 
-            Course_grade CG = new Course_grade();
-
-            foreach(dynamic item in cgData) 
+            foreach (var termData in courseGradesData)
             {
-                
+                string termId = termData.Name;
+
+                foreach (dynamic course in termData.Value)
+                {
+                    string courseId = course.Name;
+                    foreach (dynamic grade in course.Value.course_grades)
+                    {
+                        ExamReports cg = new ExamReports();
+                        cg.id = grade.id;
+                        cg.type_id = grade.type_id;
+                        cg.type_description = new Type_description
+                        {
+                            pl = grade.type_description.pl,
+                            en = grade.type_description.en
+                        };
+                        dict[(termId, courseId)] = cg;
+                    }
+
+                }
             }
-
-
-            return CG;
-
+            return true;
         }
     }
 }

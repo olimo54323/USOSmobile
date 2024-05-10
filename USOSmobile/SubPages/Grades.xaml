@@ -15,6 +15,16 @@
             <Label
                 x:Name="tytuł"
                 Text="Grades Page" />
+
+            <Button
+                x:Name="DataBtn"
+                Text="Zobacz Dane" 
+                Clicked="DataBtn_Clicked"
+                HorizontalOptions="Center" />
+            
+            <Label
+                x:Name="CoursesID"
+                Text =""/>
         </VerticalStackLayout>
     </ScrollView>
 

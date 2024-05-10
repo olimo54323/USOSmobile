@@ -24,7 +24,7 @@ namespace USOSmobile.Models
         public string course_id { get; set; }
         public Course_name course_name { get; set; }
         public string term_id { get; set; }
-        public IList<User_groups> user_groups { get; set; }
+        public List<User_groups> user_groups { get; set; }
     }
 
     internal class User_groups

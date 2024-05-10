@@ -165,7 +165,7 @@ namespace USOSmobile.Models
         //        }
         //        else
         //            localParameters = parameters;
-                
+
 
         //        RestResponse response = GetProtectedResource("services/users/user",
         //                                                api_key,
@@ -184,6 +184,42 @@ namespace USOSmobile.Models
         //        return false;
         //    }
         //}
+
+        public async Task<bool> getExams(Dictionary<string, dynamic>? parameters = null)
+        {
+            try
+            {
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+                if (parameters == null)
+                {
+                    localParameters["format"] = "json";
+                }
+                else
+                    localParameters = parameters;
+
+
+                RestResponse response = GetProtectedResource("services/examrep/user",
+                                                        api_key,
+                                                        api_secret,
+                                                        await SecureStorage.GetAsync("oauth_token"),
+                                                        await SecureStorage.GetAsync("oauth_token_secret"),
+                                                        Method.Post,
+                                                        localParameters);
+
+                if (response.IsSuccessful)
+                {
+                    ExamReports.deserializeExamReportsData(response, ref ModelObjects.examReports);
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("getExams" + ex.ToString());
+                return false;
+            }
+        }
 
         public async Task<bool>getCourses(Dictionary<string, dynamic>? parameters = null)
         {

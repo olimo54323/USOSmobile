@@ -19,11 +19,13 @@
             <Label
                 x:Name="PageTiltle"
                 Text="MyUSOS Page" />
+
             <Button
                 x:Name="DataBtn"
                 Text="Zobacz Dane" 
                 Clicked="DataBtn_Clicked"
                 HorizontalOptions="Center" />
+            
             <Label
                 x:Name="CoursesID"
                 Text =""/>
