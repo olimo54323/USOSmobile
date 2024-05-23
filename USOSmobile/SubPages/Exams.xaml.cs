@@ -9,5 +9,10 @@ namespace USOSmobile.SubPages
         {
             InitializeComponent();
         }
+
+        private /*async*/ void DataBtn_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

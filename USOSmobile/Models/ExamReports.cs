@@ -27,24 +27,25 @@ namespace USOSmobile.Models
             if (courseGradesData == null)
                 return false;
 
-            foreach (var termData in courseGradesData)
+            foreach (dynamic termData in courseGradesData)
             {
                 string termId = termData.Name;
 
                 foreach (dynamic course in termData.Value)
                 {
                     string courseId = course.Name;
+
                     foreach (dynamic grade in course.Value.course_grades)
                     {
-                        ExamReports cg = new ExamReports();
-                        cg.id = grade.id;
-                        cg.type_id = grade.type_id;
-                        cg.type_description = new Type_description
+                        ExamReports er = new ExamReports();
+                        er.id = grade.id;
+                        er.type_id = grade.type_id;
+                        er.type_description = new Type_description
                         {
                             pl = grade.type_description.pl,
                             en = grade.type_description.en
                         };
-                        dict[(termId, courseId)] = cg;
+                        dict[(termId, courseId)] = er;
                     }
 
                 }

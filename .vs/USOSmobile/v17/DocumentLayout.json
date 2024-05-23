@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\myusos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\myusos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\grades.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\grades.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\exams.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\exams.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\apibrowser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,28 +35,8 @@
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\modelobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,74 +45,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 583,
+          "DockedWidth": 310,
           "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "APIBrowser.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\APIBrowser.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\APIBrowser.cs",
-              "ViewState": "AQIAAPQAAAAAAAAAAAAgwPwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T20:34:40.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExamReports.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\ExamReports.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\ExamReports.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwDMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T21:09:02.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\User.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\User.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T09:42:17.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TimeTable.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\TimeTable.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\TimeTable.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\TimeTable.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\TimeTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T09:30:09.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Courses.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Courses.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\Courses.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Courses.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\Courses.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwFEAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T09:21:27.214Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -141,141 +56,119 @@
               "RelativeDocumentMoniker": "USOSmobile\\Models\\ModelObjects.cs",
               "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ModelObjects.cs",
               "RelativeToolTip": "USOSmobile\\Models\\ModelObjects.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-23T07:44:25.891Z",
+              "WhenOpened": "2024-05-19T10:23:26.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Grades.cs",
+              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Grades.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Models\\Grades.cs",
+              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Grades.cs",
+              "RelativeToolTip": "USOSmobile\\Models\\Grades.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T10:20:52.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "APIBrowser.cs",
+              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Models\\APIBrowser.cs",
+              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
+              "RelativeToolTip": "USOSmobile\\Models\\APIBrowser.cs",
+              "ViewState": "AQIAAPkAAAAAAAAAAAAqwBQBAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T20:34:40.028Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 206,
+          "DockedWidth": 269,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MyUSOS.xaml",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\MyUSOS.xaml",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml",
-              "RelativeToolTip": "USOSmobile\\SubPages\\MyUSOS.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T20:38:57.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActivityGroups.xaml",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\ActivityGroups.xaml",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml",
-              "RelativeToolTip": "USOSmobile\\SubPages\\ActivityGroups.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-28T18:16:31.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Exams.xaml",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Exams.xaml",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml",
-              "RelativeToolTip": "USOSmobile\\SubPages\\Exams.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T20:39:15.333Z",
+              "Title": "ExamReports.cs",
+              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Models\\ExamReports.cs",
+              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
+              "RelativeToolTip": "USOSmobile\\Models\\ExamReports.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T10:27:14.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Grades.xaml",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Grades.xaml",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml",
-              "RelativeToolTip": "USOSmobile\\SubPages\\Grades.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-10T20:39:14.551Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "9ae06c18-a3ad-4653-92b8-d3ce2c9e0f7a",
-        "Display": 1,
-        "X": 1004,
-        "Y": 80,
-        "Width": 1308,
-        "Height": 1317,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyUSOS.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAxAAAA",
+              "Title": "TimeTable.cs",
+              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\TimeTable.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Models\\TimeTable.cs",
+              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\TimeTable.cs",
+              "RelativeToolTip": "USOSmobile\\Models\\TimeTable.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBoAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T21:57:28.305Z",
+              "WhenOpened": "2024-05-19T10:23:31.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "ActivityGroups.xaml.cs",
               "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
               "RelativeDocumentMoniker": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
               "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
               "RelativeToolTip": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T20:39:18.715Z",
+              "WhenOpened": "2024-05-19T09:47:15.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "Exams.xaml.cs",
               "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
               "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Exams.xaml.cs",
               "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
               "RelativeToolTip": "USOSmobile\\SubPages\\Exams.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:43:00.102Z",
+              "WhenOpened": "2024-05-19T09:47:14.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Grades.xaml.cs",
               "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
               "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Grades.xaml.cs",
               "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
               "RelativeToolTip": "USOSmobile\\SubPages\\Grades.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:43:01.51Z",
+              "WhenOpened": "2024-05-19T09:46:55.332Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyUSOS.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAABOwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:45:38.009Z"
             }
           ]
         }

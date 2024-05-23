@@ -17,7 +17,7 @@ namespace USOSmobile.Models
         private readonly string api_key = "CgjEJKEVYZJd6kNMguyV";
         private readonly string api_secret = "dErz5k88FKwK7fwYg5D25qEKyJGt8Se3uxZqZVPn";
 
-        private readonly List<string> scopes = ["cards", "crstests", "email", "events", "grades", /*"offline_access",*/ "payments", "student_exams", "studies"];
+        private readonly List<string> scopes = ["cards", "crstests", /*"email", "events",*/ "grades", /*"offline_access", "payments",*/ "student_exams", "studies"];
 
         public RestResponse GetProtectedResource(string URLEndPoint,
                                                  string customerKey,
@@ -45,7 +45,6 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("verifyLogin" + ex.ToString());
                 return null;
             }
         }
@@ -72,7 +71,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex) 
             {
-                Debug.WriteLine("requestToken" + ex.ToString());
+                return;
             }
         }
 
@@ -86,7 +85,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("PinAuthorization" +ex.ToString());
+                return;
             }
         }
 
@@ -113,7 +112,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex) 
             {
-                Debug.WriteLine("accessToken" + ex.ToString());
+                return;
             }
          }
 
@@ -149,41 +148,39 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("verifyLogin" + ex.ToString());
                 return false;
             }
         }
 
-        //public async Task<bool> getGrades(Dictionary<string, dynamic>? parameters = null)
-        //{
-        //    try
-        //    {
-        //        Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
-        //        if (parameters == null)
-        //        {
-        //            localParameters["format"] = "json";
-        //        }
-        //        else
-        //            localParameters = parameters;
+        public async Task<bool> getGrades(Dictionary<string, dynamic>? parameters = null)
+        {
+            try
+            {
+                Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
+                if (parameters == null)
+                {
+                    localParameters["format"] = "json";
+                }
+                else
+                    localParameters = parameters;
 
 
-        //        RestResponse response = GetProtectedResource("services/users/user",
-        //                                                api_key,
-        //                                                api_secret,
-        //                                                await SecureStorage.GetAsync("oauth_token"),
-        //                                                await SecureStorage.GetAsync("oauth_token_secret"),
-        //                                                Method.Post,
-        //                                                localParameters);
+                RestResponse response = GetProtectedResource("services/users/user",
+                                                        api_key,
+                                                        api_secret,
+                                                        await SecureStorage.GetAsync("oauth_token"),
+                                                        await SecureStorage.GetAsync("oauth_token_secret"),
+                                                        Method.Post,
+                                                        localParameters);
 
 
-        //        return true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Debug.WriteLine("getGrages" + ex.ToString());
-        //        return false;
-        //    }
-        //}
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
         public async Task<bool> getExams(Dictionary<string, dynamic>? parameters = null)
         {
@@ -216,7 +213,6 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("getExams" + ex.ToString());
                 return false;
             }
         }
@@ -253,7 +249,6 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("getGroups" + ex.ToString());
                 return false;
             }
         }
@@ -313,7 +308,6 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("getGroups" + ex.ToString());
                 return null;
             }
         }
