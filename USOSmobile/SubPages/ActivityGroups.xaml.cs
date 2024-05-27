@@ -8,10 +8,14 @@ namespace USOSmobile.SubPages
         {
             InitializeComponent();
         }
-        private /*async*/ void DataBtn_Clicked(object sender, EventArgs e)
+        private async void DataButttonClicked(object sender, EventArgs e)
         {
-            
+            string line = string.Empty;
+            foreach (var item in ModelObjects.userCourses.Values)
+            {
+                line += item.Show();
+            }
+            ActivityGroupsLabel.Text = line;
         }
-
     }
 }

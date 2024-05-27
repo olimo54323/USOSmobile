@@ -17,7 +17,7 @@ namespace USOSmobile.Models
         private readonly string api_key = "CgjEJKEVYZJd6kNMguyV";
         private readonly string api_secret = "dErz5k88FKwK7fwYg5D25qEKyJGt8Se3uxZqZVPn";
 
-        private readonly List<string> scopes = ["cards", "crstests", /*"email", "events",*/ "grades", /*"offline_access", "payments",*/ "student_exams", "studies"];
+        private readonly List<string> scopes = ["cards", "crstests", "grades", "offline_access", "student_exams", "studies"];
 
         public RestResponse GetProtectedResource(string URLEndPoint,
                                                  string customerKey,
@@ -45,6 +45,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -71,6 +72,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex) 
             {
+                Debug.WriteLine(ex.Message);
                 return;
             }
         }
@@ -85,6 +87,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return;
             }
         }
@@ -112,6 +115,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex) 
             {
+                Debug.WriteLine(ex.Message);
                 return;
             }
          }
@@ -140,7 +144,7 @@ namespace USOSmobile.Models
                 
                 if(response.IsSuccessful)
                 {
-                    ModelObjects.user = ModelObjects.user.deserializeUserData(response);
+                    User.deserializeUserData(response, ref ModelObjects.user);
                     return true;
                 }
                 else
@@ -148,6 +152,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -165,19 +170,26 @@ namespace USOSmobile.Models
                     localParameters = parameters;
 
 
-                RestResponse response = GetProtectedResource("services/users/user",
+                RestResponse response = GetProtectedResource("services/grades/terms2",
                                                         api_key,
                                                         api_secret,
                                                         await SecureStorage.GetAsync("oauth_token"),
                                                         await SecureStorage.GetAsync("oauth_token_secret"),
                                                         Method.Post,
                                                         localParameters);
-
+                if (response.IsSuccessful)
+                {
+                    CourseGrades.deserializeGradesData(response, ref ModelObjects.courseGrades);
+                    return true;
+                }
+                else
+                    return false;
 
                 return true;
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -213,6 +225,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -224,7 +237,7 @@ namespace USOSmobile.Models
                 Dictionary<string, dynamic> localParameters = new Dictionary<string, dynamic>();
                 if (parameters == null)
                 {
-                    //localParameters["active_terms"] = "false";
+                    localParameters["active_terms"] = "false";
                     localParameters["lang"] = "pl";
                     localParameters["format"] = "json";
                 }
@@ -241,7 +254,7 @@ namespace USOSmobile.Models
                                                              localParameters);
                 if (response.IsSuccessful)
                 {
-                    ModelObjects.userCourses = ModelObjects.userCourses.deserializeCoursesData(response);
+                    UserCourses.deserializeCoursesData(response, ref ModelObjects.userCourses);
                     return true;
                 }
                 else
@@ -249,6 +262,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -281,6 +295,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -308,6 +323,7 @@ namespace USOSmobile.Models
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return null;
             }
         }

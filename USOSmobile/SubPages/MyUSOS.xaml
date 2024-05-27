@@ -20,15 +20,15 @@
                 x:Name="PageTiltle"
                 Text="MyUSOS Page" />
 
-            <Button
-                x:Name="DataBtn"
+            <!--<Button
+                x:Name="DataButton"
                 Text="Zobacz Dane" 
-                Clicked="DataBtn_Clicked"
-                HorizontalOptions="Center" />
+                Clicked="DataButttonClicked"
+                HorizontalOptions="Center" />-->
             
-            <Label
-                x:Name="CoursesID"
-                Text =""/>
+            <!--<Label
+                x:Name="CoursesLabel"
+                Text =""/>-->
         </VerticalStackLayout>
     </ScrollView>
 

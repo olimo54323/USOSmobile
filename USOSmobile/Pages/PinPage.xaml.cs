@@ -1,5 +1,6 @@
 ﻿using USOSmobile.Models;
 using USOSmobile.SubPages;
+using System.Text.RegularExpressions;
 
 namespace USOSmobile
 {
@@ -12,16 +13,20 @@ namespace USOSmobile
 
         private async void OnLoginBtnClicked(object sender, EventArgs e)
         {
-            if (PINEntry.Text == null || PINEntry.Text.Length !=8)
+            
+            if (!Regex.IsMatch(PINEntry.Text, @"^[0-9]{8}$"))
             {
-                IsLoggedLabel.Text = "Brak kodu PIN, spróbuj ponownie";
+                IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
                 return;
             }
             await SecureStorage.SetAsync("oauth_verifier", PINEntry.Text);
             await ModelObjects.apiBrowser.accessToken();
             bool isLogged = await ModelObjects.apiBrowser.getUser();
             if (isLogged)
+            {
                 await Shell.Current.GoToAsync($"//{nameof(MyUSOSPage)}");
+                await ModelObjects.apiBrowser.getCourses();
+            }
             else
                 IsLoggedLabel.Text = "Zły kod PIN, spróbuj ponownie";
         }

@@ -10,9 +10,21 @@ namespace USOSmobile.SubPages
             InitializeComponent();
         }
 
-        private /*async*/ void DataBtn_Clicked(object sender, EventArgs e)
+        private async void DataButttonClicked(object sender, EventArgs e)
         {
-            
+            Dictionary<string, dynamic> parameters = new Dictionary<string, dynamic>();
+            string line = string.Empty;
+            foreach (dynamic course in ModelObjects.userCourses.Keys)
+            {
+                parameters["term_ids"] = course;
+                await ModelObjects.apiBrowser.getExams(parameters);
+            }
+
+            foreach (dynamic course in ModelObjects.examReports.Values)
+            {
+                line += course.Show();
+            }
+            ExamsLabel.Text = line;
         }
     }
 }

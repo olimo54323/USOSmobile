@@ -19,11 +19,11 @@
             <Button
                 x:Name="DataBtn"
                 Text="Zobacz Dane" 
-                Clicked="DataBtn_Clicked"
+                Clicked="DataButttonClicked"
                 HorizontalOptions="Center" />
             
             <Label
-                x:Name="CoursesID"
+                x:Name="ActivityGroupsLabel"
                 Text =""/>
         </VerticalStackLayout>
     </ScrollView>
