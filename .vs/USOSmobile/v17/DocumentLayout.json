@@ -1,46 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\",
+  "WorkspaceRootPath": "C:\\Users\\karpt\\Documents\\USOSmobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\apibrowser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\apibrowser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\pages\\pinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\pages\\pinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\pages\\pinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\pages\\pinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\pages\\pinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\schedule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\models\\apibrowser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\apibrowser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\schedule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\schedule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\schedule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\schedule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\myusos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\myusos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\myusos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\grades.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\wrobl\\source\\repos\\usosmobile\\usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\grades.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\grades.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\exams.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\exams.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\exams.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\subpages\\activitygroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\subpages\\activitygroups.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|c:\\users\\karpt\\documents\\usosmobile\\usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D9105F-BA70-4520-A1B6-5840EBDA2390}|USOSmobile\\USOSmobile.csproj|solutionrelative:usosmobile\\models\\examreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,134 +74,216 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "USOSmobile\\Pages\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml",
-              "RelativeToolTip": "USOSmobile\\Pages\\LoginPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-27T17:49:46.841Z"
+              "DocumentIndex": 11,
+              "Title": "Exams.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Exams.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Exams.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T00:01:13.45Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ExamReports.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
               "RelativeDocumentMoniker": "USOSmobile\\Models\\ExamReports.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Models\\ExamReports.cs",
               "RelativeToolTip": "USOSmobile\\Models\\ExamReports.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwFIAAABfAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:11:42.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Grades.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Grades.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\Grades.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\Grades.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\Grades.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAxwDkAAACwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:53:06.715Z"
+              "WhenOpened": "2024-06-24T19:46:06.66Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "APIBrowser.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Models\\APIBrowser.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
-              "RelativeToolTip": "USOSmobile\\Models\\APIBrowser.cs",
-              "ViewState": "AQIAAC4BAAAAAAAAAAAmwEMBAAAgAAAA",
+              "Title": "PinPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Pages\\PinPage.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\Pages\\PinPage.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:41:21.932Z",
+              "WhenOpened": "2024-06-24T20:03:43.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PinPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Pages\\PinPage.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\Pages\\PinPage.xaml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAmwBYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:29:46.477Z"
+              "Title": "PinPage.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\Pages\\PinPage.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\PinPage.xaml",
+              "RelativeToolTip": "USOSmobile\\Pages\\PinPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T20:03:40.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Exams.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Exams.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\SubPages\\Exams.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "APIBrowser.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Models\\APIBrowser.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Models\\APIBrowser.cs",
+              "RelativeToolTip": "USOSmobile\\Models\\APIBrowser.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwDYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:22:35.102Z"
+              "WhenOpened": "2024-06-24T19:56:41.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Grades.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Grades.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\SubPages\\Grades.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:22:36.143Z"
+              "WhenOpened": "2024-06-24T19:55:58.749Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Schedule.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Schedule.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\SubPages\\Schedule.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:22:37.662Z"
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "USOSmobile\\Pages\\LoginPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:55:52.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ActivityGroups.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Title": "Schedule.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Schedule.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Schedule.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:22:22.15Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+              "WhenOpened": "2024-06-24T19:53:15.619Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "USOSmobile\\Pages\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\wrobl\\source\\repos\\USOSmobile\\USOSmobile\\Pages\\LoginPage.xaml.cs",
-              "RelativeToolTip": "USOSmobile\\Pages\\LoginPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "DocumentIndex": 6,
+              "Title": "Schedule.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Schedule.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Schedule.xaml",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Schedule.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:52:48.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyUSOS.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\MyUSOS.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:29:45.998Z",
+              "WhenOpened": "2024-06-24T19:52:34.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyUSOS.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\MyUSOS.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\MyUSOS.xaml",
+              "RelativeToolTip": "USOSmobile\\SubPages\\MyUSOS.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:52:27.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Grades.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Grades.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Grades.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:51:12.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Grades.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Grades.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Grades.xaml",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Grades.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:51:00.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Exams.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\Exams.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\Exams.xaml",
+              "RelativeToolTip": "USOSmobile\\SubPages\\Exams.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:50:36.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ActivityGroups.xaml",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\ActivityGroups.xaml",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml",
+              "RelativeToolTip": "USOSmobile\\SubPages\\ActivityGroups.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T19:50:04.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ActivityGroups.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
+              "RelativeDocumentMoniker": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
+              "ToolTip": "C:\\Users\\karpt\\Documents\\USOSmobile\\USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
+              "RelativeToolTip": "USOSmobile\\SubPages\\ActivityGroups.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:46:47.505Z",
               "EditorCaption": ""
             }
           ]

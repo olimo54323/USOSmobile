@@ -16,12 +16,6 @@
                 x:Name="tytuł"
                 Text="Grades Page" />
 
-            <Button
-                x:Name="DataButton"
-                Text="Zobacz Dane" 
-                Clicked="DataButttonClicked"
-                HorizontalOptions="Center" />
-            
             <Label
                 x:Name="GradesLabel"
                 Text =""/>

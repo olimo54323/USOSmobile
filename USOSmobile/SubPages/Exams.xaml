@@ -16,12 +16,6 @@
                 x:Name="tytuł"
                 Text="Exams Page" />
 
-            <Button
-                x:Name="DataButton"
-                Text="Zobacz Dane" 
-                Clicked="DataButttonClicked"
-                HorizontalOptions="Center" />
-            
             <Label
                 x:Name="ExamsLabel"
                 Text =""/>

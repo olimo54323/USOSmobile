@@ -1,1 +1,1 @@
-C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\USOSmobile.csproj;x64
+C:\Users\karpt\Documents\USOSmobile\USOSmobile\USOSmobile.csproj;x64

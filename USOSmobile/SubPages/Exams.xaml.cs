@@ -8,9 +8,13 @@ namespace USOSmobile.SubPages
         public ExamsPage()
         {
             InitializeComponent();
+            Task.Run(() =>
+            {
+                LoadData();
+            });
         }
 
-        private async void DataButttonClicked(object sender, EventArgs e)
+        private async void LoadData()
         {
             Dictionary<string, dynamic> parameters = new Dictionary<string, dynamic>();
             string line = string.Empty;
@@ -25,6 +29,7 @@ namespace USOSmobile.SubPages
                 line += course.Show();
             }
             ExamsLabel.Text = line;
+
         }
     }
 }
