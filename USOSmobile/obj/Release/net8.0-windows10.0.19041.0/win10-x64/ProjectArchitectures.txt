@@ -1,0 +1,1 @@
+C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\USOSmobile.csproj;x64

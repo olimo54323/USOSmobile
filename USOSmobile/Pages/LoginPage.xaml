@@ -12,11 +12,7 @@
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
-            <Button
-                x:Name="LoginBtn"
-                Text="Zaloguj" 
-                Clicked="OnLoginBtnClicked"
-                HorizontalOptions="Center" />
+            <ActivityIndicator IsRunning="True" />
         </VerticalStackLayout>
     </ScrollView>
 

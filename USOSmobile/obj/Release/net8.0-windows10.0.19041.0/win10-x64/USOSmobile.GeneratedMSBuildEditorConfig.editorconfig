@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = USOSmobile
+build_property.ProjectDir = C:\Users\wrobl\source\repos\USOSmobile\USOSmobile\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/Pages/PinPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Pages.PinPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PinPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PinPage.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/SubPages/ActivityGroups.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.SubPages.ActivityGroups.xaml
+build_metadata.AdditionalFiles.TargetPath = SubPages\ActivityGroups.xaml
+build_metadata.AdditionalFiles.RelativePath = SubPages\ActivityGroups.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/SubPages/Exams.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.SubPages.Exams.xaml
+build_metadata.AdditionalFiles.TargetPath = SubPages\Exams.xaml
+build_metadata.AdditionalFiles.RelativePath = SubPages\Exams.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/SubPages/Grades.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.SubPages.Grades.xaml
+build_metadata.AdditionalFiles.TargetPath = SubPages\Grades.xaml
+build_metadata.AdditionalFiles.RelativePath = SubPages\Grades.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/SubPages/MyUSOS.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.SubPages.MyUSOS.xaml
+build_metadata.AdditionalFiles.TargetPath = SubPages\MyUSOS.xaml
+build_metadata.AdditionalFiles.RelativePath = SubPages\MyUSOS.xaml
+
+[C:/Users/wrobl/source/repos/USOSmobile/USOSmobile/SubPages/Schedule.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = USOSmobile.SubPages.Schedule.xaml
+build_metadata.AdditionalFiles.TargetPath = SubPages\Schedule.xaml
+build_metadata.AdditionalFiles.RelativePath = SubPages\Schedule.xaml
