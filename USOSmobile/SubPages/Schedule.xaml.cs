@@ -24,19 +24,20 @@ namespace USOSmobile.SubPages
                 {
                     foreach(dynamic userGroup in termCourses.user_groups)
                     {
+                        
                         parameters["unit_id"] = userGroup.course_unit_id;
                         parameters["group_number"] = userGroup.group_number;
                         await ModelObjects.apiBrowser.getTimetables(parameters);
                     }
                 }
             }
-
-            foreach (dynamic course in ModelObjects.timeTables.Values)
-            {
-                line += course.Show();
-            }
-            ScheduleLabel.Text = line;
-
         }
     }
+
+    public class ScheduleViewModel
+    {
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate {  get; set; }
+    }
+
 }

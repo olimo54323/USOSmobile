@@ -14,17 +14,17 @@ namespace USOSmobile.SubPages
             cv.ItemsSource = Courses;
             Task.Run(() =>
             {
-                loadData();
+                LoadData();
             });
         }
 
 
         private async void DataButtonClicked(object sender, EventArgs e)
         {
-            loadData();
+            LoadData();
         }
 
-        private void loadData()
+        private void LoadData()
         {
             Courses.Clear();
             foreach (var item in ModelObjects.userCourses.Values)

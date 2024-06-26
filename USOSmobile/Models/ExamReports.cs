@@ -17,17 +17,17 @@ namespace USOSmobile.Models
 
         //##########################################################
 
-        string id 
+        public string id 
         {
             get { return _Id; }
             set { _Id = value; }
         }
-        string type_id 
+        public string type_id 
         {
             get { return _TypeId; }
             set { _TypeId = value; } 
         }
-        MultiLangItem type_description
+        public MultiLangItem type_description
         {
             get { return _TypeDescription; }
             set { _TypeDescription = value; } 

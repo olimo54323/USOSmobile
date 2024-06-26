@@ -19,7 +19,6 @@
         {
             _Pl = string.Empty;
             _En = string.Empty;
-
         }
     }
 }
