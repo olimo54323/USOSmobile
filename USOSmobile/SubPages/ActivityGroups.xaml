@@ -4,27 +4,42 @@
              x:Class="USOSmobile.SubPages.ActivityGroupsPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="icon.png"
-                HeightRequest="185"
-                Aspect="AspectFit" />
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image Source="icon.png" HeightRequest="185" Aspect="AspectFit" />
 
-            <Label
-                x:Name="tytuł"
-                Text="Actibity Groups Page" />
-            
-            <Button
-                x:Name="DataBtn"
-                Text="Zobacz Dane" 
-                Clicked="DataButttonClicked"
-                HorizontalOptions="Center" />
-            
-            <Label
-                x:Name="ActivityGroupsLabel"
-                Text =""/>
+
+            <CollectionView x:Name="cv" ItemsSource="{Binding UserGroups}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame  BackgroundColor="Purple" CornerRadius="0" Padding="10" Margin="15,15,15,25">
+                            <StackLayout>
+                                <Label Text="{Binding CourseNamePL}" FontSize="Large" FontAttributes="Bold" />
+                                <Label Text="Rok akademicki" FontAttributes="Bold" FontSize="Small" />
+                                <Label Text="{Binding TermId}" FontSize="Small" />
+
+                                <CollectionView ItemsSource="{Binding UserGroups}" ItemsLayout="HorizontalList">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout Padding="5">
+                                                <Label Text="{Binding ClassTypePL}" FontSize="Small" FontAttributes="Bold" />
+                                                <CollectionView ItemsSource="{Binding Lecturers}" ItemsLayout="HorizontalList">
+                                                    <CollectionView.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <StackLayout>
+                                                                <Label Text="{Binding FullName}" Padding="5" FontSize="Small" />
+                                                            </StackLayout>
+                                                        </DataTemplate>
+                                                    </CollectionView.ItemTemplate>
+                                                </CollectionView>
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </VerticalStackLayout>
     </ScrollView>
 
